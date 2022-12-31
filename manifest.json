@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/web-manifest-combined.json",
+  "name": "Dice Roller",
+  "short_name": "DiceRoller",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#70c1b3",
+  "description": "An app to roll a dice",
+  "icons": [{
+    "src": "./assets/icon.png",
+    "sizes": "500x500",
+    "type": "image/png"
+  }]
+}

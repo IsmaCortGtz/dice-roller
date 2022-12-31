@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="notranslate" translate="no">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="google" content="notranslate" />
+
+    <link rel="manifest" href="manifest.json"/>
+    <link rel="apple-touch-icon" href="assets/icon.png">
+    <meta name="theme-color" content="#fc4866"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#fc4866">
+    <meta name="apple-mobile-web-app-title" content="Dice Roller">
+    <meta name="msapplication-TileImage" content="assets/icon.png">
+    <meta name="msapplication-TileColor" content="#fc4866">
+
+    <meta property="og:url" content="./">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Dice roller">
+    <meta property="og:image" content="assets/icon.png">
+    <meta property="og:description" content="App to roll a dice">
+
+    <title>Dice Roller</title>
+    <link rel="icon" type="image/png" href="assets/icon.png"/>
+
+    <link rel="stylesheet" href="assets/styles.css">
+    <script src="assets/traduction.js"></script>
+    <script src="assets/rando_2.0.0.js"></script>
+    <script src="assets/index.js" defer></script>
+  </head>
+
+  <body>
+
+    <div id="selectScreen" class="select-dice-container">
+      <button class="dice-select-button" onclick="goToRoll(1)">
+        <span class="select-button" id="first-select">1</span>
+      </button>
+      <button class="dice-select-button" onclick="goToRoll(2)">
+        <span class="select-button" id="second-select">2</span>
+      </button>
+    </div>
+
+    <div id="diceScreen" style="display: none;" class="roll-dice-container">
+      <div class="button-container">
+        <button id="roll-button" class="roll-button" onclick="roll()"></button>
+      </div>
+
+      <div class="dice-container">
+        <div id="diceOne" class="dice dice-one" value="1">
+          <div class="dice-dot dot-1"></div>
+          <div class="dice-dot dot-2"></div>
+          <div class="dice-dot dot-3"></div>
+          <div class="dice-dot dot-4"></div>
+          <div class="dice-dot dot-5"></div>
+          <div class="dice-dot dot-6"></div>
+        </div>
+
+        <div id="diceTwo" class="dice dice-two" value="2">
+          <div class="dice-dot dot-1"></div>
+          <div class="dice-dot dot-2"></div>
+          <div class="dice-dot dot-3"></div>
+          <div class="dice-dot dot-4"></div>
+          <div class="dice-dot dot-5"></div>
+          <div class="dice-dot dot-6"></div>
+        </div>
+      </div>
+
+      <div class="result-container">
+        <span class="dice-result" id="dice-result">3</span>
+      </div>
+    </div>
+
+  </body>
+</html>
