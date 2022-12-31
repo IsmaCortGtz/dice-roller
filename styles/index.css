@@ -1,0 +1,23 @@
+:root {
+  --dice-size: 100px;
+  --text-color: #000000;
+  --background: #70c1b3;
+  --dice-color: #ffffff;
+  --dice-dot-color: #fc4866;
+  --button-color: #fc4866;
+  --button-press: #a1283c;
+  --button-disabled: #747474;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body, html {
+  height: 100%;
+  background-color: var(--background);
+}

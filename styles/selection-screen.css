@@ -1,0 +1,41 @@
+/* ========== Selection screen ========== */
+
+.select-dice-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--background);
+}
+
+.dice-select-button {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.dice-select-button:first-of-type {
+  margin: 20px 20px 10px 20px;
+  background-color: var(--button-color);
+}
+
+.dice-select-button:first-of-type:active {
+  background-color: var(--button-press);
+}
+
+.dice-select-button:last-of-type {
+  margin: 10px 20px 20px 20px;
+  background-color: var(--button-color);
+}
+
+.dice-select-button:last-of-type:active {
+  background-color: var(--button-press);
+}
+
+.select-button {
+  font-size: 2rem;
+  font-weight: bold;
+}

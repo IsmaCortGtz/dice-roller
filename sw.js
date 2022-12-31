@@ -1,15 +1,18 @@
 var APP_PREFIX = 'DiceRoller_';
-var VERSION = 'v_0.0.1';
+var VERSION = 'v_0.1.0';
 var CACHE_NAME = APP_PREFIX + VERSION
 var URLS = [
   "./",
   "./index.html",
   "./manifest.json",
   "./assets/icon.png",
-  "./assets/index.js",
-  "./assets/rando_2.0.0.js",
-  "./assets/styles.css",
-  "./assets/traduction.js",
+  "./js/index.js",
+  "./js/rando_2.0.0.js",
+  "./js/traduction.js",
+  "./styles/index.css",
+  "./styles/dice-screen.css",
+  "./styles/dice.css",
+  "./styles/selection-screen.css",
 ]
 
 self.addEventListener('fetch', function (e) {

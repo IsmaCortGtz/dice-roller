@@ -1,0 +1,54 @@
+/* ========== Dice screen ========== */
+
+.roll-dice-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--background);
+}
+
+.button-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roll-button {
+  background-color: var(--button-color);
+  padding: 20px 100px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.roll-button:active {
+  background-color: var(--button-press);
+}
+
+.roll-button:disabled {
+  color: var(--text-color);
+  background-color: var(--button-disabled);
+}
+
+.dice-container {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.result-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dice-result {
+  font-size: 4rem;
+  font-weight: bold;
+}
